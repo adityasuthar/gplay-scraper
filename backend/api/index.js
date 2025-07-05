@@ -17,9 +17,9 @@ const __dirname = dirname(__filename);
 app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
 // Handle requests by serving index.html for all routes
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/dist', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../frontend/dist', 'index.html'));
+// });
 
 // Search API
 // app.get("/api/search", async (req, res) => { 
